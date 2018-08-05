@@ -13,6 +13,12 @@
 		8B248F012114F5E6003A0F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B248F002114F5E6003A0F69 /* Assets.xcassets */; };
 		8B248F042114F5E6003A0F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B248F022114F5E6003A0F69 /* LaunchScreen.storyboard */; };
 		8B248F0F2114F5E8003A0F69 /* EasynvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B248F0E2114F5E8003A0F69 /* EasynvestTests.swift */; };
+		8BE069772116785400D1AEBE /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE069762116785400D1AEBE /* Simulation.swift */; };
+		8BE0697B21167BF100D1AEBE /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0697A21167BF100D1AEBE /* Investment.swift */; };
+		8BE0697D2116879600D1AEBE /* UIColor+Easynvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0697C2116879600D1AEBE /* UIColor+Easynvest.swift */; };
+		8BE0698121168B9900D1AEBE /* SimulationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0698021168B9900D1AEBE /* SimulationService.swift */; };
+		9180264B2AE3761F94A57D86 /* Pods_EasynvestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300810AF47D54D3D4CBAB101 /* Pods_EasynvestTests.framework */; };
+		EC990079D80C82C0A6536EB1 /* Pods_Easynvest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112B8F188D95161056B5A614 /* Pods_Easynvest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		112B8F188D95161056B5A614 /* Pods_Easynvest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easynvest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		300810AF47D54D3D4CBAB101 /* Pods_EasynvestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasynvestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC10708C0948D4979951736 /* Pods-Easynvest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easynvest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easynvest/Pods-Easynvest.debug.xcconfig"; sourceTree = "<group>"; };
 		8B248EF62114F5DB003A0F69 /* Easynvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easynvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B248EF92114F5DB003A0F69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B248EFB2114F5DB003A0F69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +45,13 @@
 		8B248F0A2114F5E8003A0F69 /* EasynvestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasynvestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B248F0E2114F5E8003A0F69 /* EasynvestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestTests.swift; sourceTree = "<group>"; };
 		8B248F102114F5E8003A0F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE069762116785400D1AEBE /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
+		8BE0697A21167BF100D1AEBE /* Investment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
+		8BE0697C2116879600D1AEBE /* UIColor+Easynvest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Easynvest.swift"; sourceTree = "<group>"; };
+		8BE0698021168B9900D1AEBE /* SimulationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationService.swift; sourceTree = "<group>"; };
+		A78C67976D58EF49DD0AED2A /* Pods-EasynvestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasynvestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasynvestTests/Pods-EasynvestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3B459DC58F2BF83A3B0A31F /* Pods-Easynvest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easynvest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easynvest/Pods-Easynvest.release.xcconfig"; sourceTree = "<group>"; };
+		E39B0C80AAD5916191492174 /* Pods-EasynvestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasynvestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasynvestTests/Pods-EasynvestTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC990079D80C82C0A6536EB1 /* Pods_Easynvest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +67,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9180264B2AE3761F94A57D86 /* Pods_EasynvestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50653260CC8E66630ECA2DE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				112B8F188D95161056B5A614 /* Pods_Easynvest.framework */,
+				300810AF47D54D3D4CBAB101 /* Pods_EasynvestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6100578227C572C3E7938780 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AC10708C0948D4979951736 /* Pods-Easynvest.debug.xcconfig */,
+				B3B459DC58F2BF83A3B0A31F /* Pods-Easynvest.release.xcconfig */,
+				A78C67976D58EF49DD0AED2A /* Pods-EasynvestTests.debug.xcconfig */,
+				E39B0C80AAD5916191492174 /* Pods-EasynvestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8B248EED2114F5DB003A0F69 = {
 			isa = PBXGroup;
 			children = (
 				8B248EF82114F5DB003A0F69 /* Easynvest */,
 				8B248F0D2114F5E8003A0F69 /* EasynvestTests */,
 				8B248EF72114F5DB003A0F69 /* Products */,
+				6100578227C572C3E7938780 /* Pods */,
+				50653260CC8E66630ECA2DE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +117,9 @@
 		8B248EF82114F5DB003A0F69 /* Easynvest */ = {
 			isa = PBXGroup;
 			children = (
+				8BE0697C2116879600D1AEBE /* UIColor+Easynvest.swift */,
+				8BE0697F211688B500D1AEBE /* Service */,
+				8BE069752116775600D1AEBE /* Model */,
 				8B248EF92114F5DB003A0F69 /* AppDelegate.swift */,
 				8B248EFB2114F5DB003A0F69 /* ViewController.swift */,
 				8B248EFD2114F5DB003A0F69 /* Main.storyboard */,
@@ -96,6 +139,23 @@
 			path = EasynvestTests;
 			sourceTree = "<group>";
 		};
+		8BE069752116775600D1AEBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8BE069762116785400D1AEBE /* Simulation.swift */,
+				8BE0697A21167BF100D1AEBE /* Investment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8BE0697F211688B500D1AEBE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8BE0698021168B9900D1AEBE /* SimulationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B248F132114F5E8003A0F69 /* Build configuration list for PBXNativeTarget "Easynvest" */;
 			buildPhases = (
+				1F9F78CBBACAF159816F86E4 /* [CP] Check Pods Manifest.lock */,
 				8B248EF22114F5DB003A0F69 /* Sources */,
 				8B248EF32114F5DB003A0F69 /* Frameworks */,
 				8B248EF42114F5DB003A0F69 /* Resources */,
+				8B0DCDAF2116758300B8E32B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -120,6 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B248F162114F5E8003A0F69 /* Build configuration list for PBXNativeTarget "EasynvestTests" */;
 			buildPhases = (
+				1CDD615BBC2476F0CF306850 /* [CP] Check Pods Manifest.lock */,
 				8B248F062114F5E8003A0F69 /* Sources */,
 				8B248F072114F5E8003A0F69 /* Frameworks */,
 				8B248F082114F5E8003A0F69 /* Resources */,
@@ -192,12 +255,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CDD615BBC2476F0CF306850 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasynvestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F9F78CBBACAF159816F86E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Easynvest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B0DCDAF2116758300B8E32B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B248EF22114F5DB003A0F69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BE0698121168B9900D1AEBE /* SimulationService.swift in Sources */,
+				8BE0697B21167BF100D1AEBE /* Investment.swift in Sources */,
 				8B248EFC2114F5DB003A0F69 /* ViewController.swift in Sources */,
+				8BE069772116785400D1AEBE /* Simulation.swift in Sources */,
+				8BE0697D2116879600D1AEBE /* UIColor+Easynvest.swift in Sources */,
 				8B248EFA2114F5DB003A0F69 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +479,7 @@
 		};
 		8B248F142114F5E8003A0F69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AC10708C0948D4979951736 /* Pods-Easynvest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +498,7 @@
 		};
 		8B248F152114F5E8003A0F69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B459DC58F2BF83A3B0A31F /* Pods-Easynvest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +517,7 @@
 		};
 		8B248F172114F5E8003A0F69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A78C67976D58EF49DD0AED2A /* Pods-EasynvestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +539,7 @@
 		};
 		8B248F182114F5E8003A0F69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E39B0C80AAD5916191492174 /* Pods-EasynvestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

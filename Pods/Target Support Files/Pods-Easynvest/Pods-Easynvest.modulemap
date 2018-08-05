@@ -1,0 +1,6 @@
+framework module Pods_Easynvest {
+  umbrella header "Pods-Easynvest-umbrella.h"
+
+  export *
+  module * { export * }
+}

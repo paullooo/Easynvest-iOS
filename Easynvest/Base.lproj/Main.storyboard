@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,91 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Easynvest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quanto você gostaria de aplicar?*" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDJ-hA-aIG">
+                                <rect key="frame" x="4" y="96" width="366" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="R$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UAm-CY-yZA">
+                                <rect key="frame" x="4" y="142.5" width="366" height="40"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <textInputTraits key="textInputTraits" textContentType="tel"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual o percentual do CDI do investimento?*" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHI-T8-Gpm">
+                                <rect key="frame" x="4" y="327" width="367" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVx-Xi-up2">
+                                <rect key="frame" x="161.5" y="483.5" width="52" height="30"/>
+                                <state key="normal" title="Simular"/>
+                                <connections>
+                                    <action selector="simulationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5r7-RN-iKR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="100%" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QK4-FB-QXU">
+                                <rect key="frame" x="4" y="375.5" width="366" height="40"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="dia/mês/ano" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvD-Hb-Jce">
+                                <rect key="frame" x="4" y="259" width="366" height="40"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a data de vencimento do investimento?*" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7p-CA-Zc1">
+                                <rect key="frame" x="4" y="210.5" width="367" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DVx-Xi-up2" secondAttribute="trailing" constant="161.5" id="14B-bf-uFa"/>
+                            <constraint firstItem="UDJ-hA-aIG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="A4W-s4-CVT"/>
+                            <constraint firstItem="QK4-FB-QXU" firstAttribute="trailing" secondItem="UAm-CY-yZA" secondAttribute="trailing" id="B67-5Y-dIQ"/>
+                            <constraint firstItem="DVx-Xi-up2" firstAttribute="top" secondItem="QK4-FB-QXU" secondAttribute="bottom" constant="68" id="Clb-Et-ILF"/>
+                            <constraint firstItem="QHI-T8-Gpm" firstAttribute="top" secondItem="dvD-Hb-Jce" secondAttribute="bottom" constant="28" id="D6N-yR-pkh"/>
+                            <constraint firstItem="QK4-FB-QXU" firstAttribute="leading" secondItem="UAm-CY-yZA" secondAttribute="leading" id="EWg-GT-QeX"/>
+                            <constraint firstItem="N7p-CA-Zc1" firstAttribute="top" secondItem="UAm-CY-yZA" secondAttribute="bottom" constant="28" id="FLP-8z-drv"/>
+                            <constraint firstItem="QK4-FB-QXU" firstAttribute="trailing" secondItem="UDJ-hA-aIG" secondAttribute="trailing" id="PAe-Ud-YpV"/>
+                            <constraint firstItem="QK4-FB-QXU" firstAttribute="top" secondItem="QHI-T8-Gpm" secondAttribute="bottom" constant="28" id="Pod-is-YJ4"/>
+                            <constraint firstItem="QHI-T8-Gpm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="UmT-wn-IHq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QHI-T8-Gpm" secondAttribute="trailing" constant="4" id="ZzL-tu-4tJ"/>
+                            <constraint firstItem="UDJ-hA-aIG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="bDi-zj-N2S"/>
+                            <constraint firstItem="dvD-Hb-Jce" firstAttribute="top" secondItem="N7p-CA-Zc1" secondAttribute="bottom" constant="28" id="clg-Du-PA0"/>
+                            <constraint firstItem="QK4-FB-QXU" firstAttribute="trailing" secondItem="dvD-Hb-Jce" secondAttribute="trailing" id="jxT-hW-94t"/>
+                            <constraint firstItem="UAm-CY-yZA" firstAttribute="top" secondItem="UDJ-hA-aIG" secondAttribute="bottom" constant="26" id="tEV-Ip-ClM"/>
+                            <constraint firstItem="QK4-FB-QXU" firstAttribute="leading" secondItem="dvD-Hb-Jce" secondAttribute="leading" id="u8e-bg-qhv"/>
+                            <constraint firstItem="QK4-FB-QXU" firstAttribute="leading" secondItem="UDJ-hA-aIG" secondAttribute="leading" id="vEF-xb-rsf"/>
+                            <constraint firstItem="N7p-CA-Zc1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="voc-NR-dud"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UDJ-hA-aIG" secondAttribute="trailing" constant="5" id="x0h-5d-VEc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N7p-CA-Zc1" secondAttribute="trailing" constant="4" id="xYq-Dy-qfd"/>
+                            <constraint firstItem="DVx-Xi-up2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161.5" id="zQq-Yu-9d9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cdiPercentQuestionLabel" destination="QHI-T8-Gpm" id="UEe-TP-vnK"/>
+                        <outlet property="simulationButton" destination="DVx-Xi-up2" id="SOV-BE-7G6"/>
+                        <outlet property="timeQuestionLabel" destination="N7p-CA-Zc1" id="NzK-o9-0Z0"/>
+                        <outlet property="valueQuestionLabel" destination="UDJ-hA-aIG" id="7dW-XM-Py2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
