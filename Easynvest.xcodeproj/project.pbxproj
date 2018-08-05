@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B240CDB211777E800488BE2 /* FormSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B240CDA211777E800488BE2 /* FormSimulation.swift */; };
 		8B248EFA2114F5DB003A0F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B248EF92114F5DB003A0F69 /* AppDelegate.swift */; };
 		8B248EFC2114F5DB003A0F69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B248EFB2114F5DB003A0F69 /* ViewController.swift */; };
 		8B248EFF2114F5DB003A0F69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B248EFD2114F5DB003A0F69 /* Main.storyboard */; };
@@ -17,6 +18,11 @@
 		8BE0697B21167BF100D1AEBE /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0697A21167BF100D1AEBE /* Investment.swift */; };
 		8BE0697D2116879600D1AEBE /* UIColor+Easynvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0697C2116879600D1AEBE /* UIColor+Easynvest.swift */; };
 		8BE0698121168B9900D1AEBE /* SimulationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0698021168B9900D1AEBE /* SimulationService.swift */; };
+		8BE0698321175B3A00D1AEBE /* UILabel+Easynvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0698221175B3A00D1AEBE /* UILabel+Easynvest.swift */; };
+		8BE06987211762A100D1AEBE /* SimulationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE06985211762A100D1AEBE /* SimulationTableViewCell.swift */; };
+		8BE06988211762A100D1AEBE /* SimulationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BE06986211762A100D1AEBE /* SimulationTableViewCell.xib */; };
+		8BE0698B21176CF700D1AEBE /* SubmitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0698921176CF700D1AEBE /* SubmitTableViewCell.swift */; };
+		8BE0698C21176CF700D1AEBE /* SubmitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BE0698A21176CF700D1AEBE /* SubmitTableViewCell.xib */; };
 		9180264B2AE3761F94A57D86 /* Pods_EasynvestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300810AF47D54D3D4CBAB101 /* Pods_EasynvestTests.framework */; };
 		EC990079D80C82C0A6536EB1 /* Pods_Easynvest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112B8F188D95161056B5A614 /* Pods_Easynvest.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +41,7 @@
 		112B8F188D95161056B5A614 /* Pods_Easynvest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easynvest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		300810AF47D54D3D4CBAB101 /* Pods_EasynvestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasynvestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC10708C0948D4979951736 /* Pods-Easynvest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easynvest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easynvest/Pods-Easynvest.debug.xcconfig"; sourceTree = "<group>"; };
+		8B240CDA211777E800488BE2 /* FormSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSimulation.swift; sourceTree = "<group>"; };
 		8B248EF62114F5DB003A0F69 /* Easynvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easynvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B248EF92114F5DB003A0F69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B248EFB2114F5DB003A0F69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		8BE0697A21167BF100D1AEBE /* Investment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
 		8BE0697C2116879600D1AEBE /* UIColor+Easynvest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Easynvest.swift"; sourceTree = "<group>"; };
 		8BE0698021168B9900D1AEBE /* SimulationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationService.swift; sourceTree = "<group>"; };
+		8BE0698221175B3A00D1AEBE /* UILabel+Easynvest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Easynvest.swift"; sourceTree = "<group>"; };
+		8BE06985211762A100D1AEBE /* SimulationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationTableViewCell.swift; sourceTree = "<group>"; };
+		8BE06986211762A100D1AEBE /* SimulationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimulationTableViewCell.xib; sourceTree = "<group>"; };
+		8BE0698921176CF700D1AEBE /* SubmitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTableViewCell.swift; sourceTree = "<group>"; };
+		8BE0698A21176CF700D1AEBE /* SubmitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubmitTableViewCell.xib; sourceTree = "<group>"; };
 		A78C67976D58EF49DD0AED2A /* Pods-EasynvestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasynvestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasynvestTests/Pods-EasynvestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3B459DC58F2BF83A3B0A31F /* Pods-Easynvest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easynvest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easynvest/Pods-Easynvest.release.xcconfig"; sourceTree = "<group>"; };
 		E39B0C80AAD5916191492174 /* Pods-EasynvestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasynvestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasynvestTests/Pods-EasynvestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,11 +129,12 @@
 		8B248EF82114F5DB003A0F69 /* Easynvest */ = {
 			isa = PBXGroup;
 			children = (
+				8BE0698221175B3A00D1AEBE /* UILabel+Easynvest.swift */,
 				8BE0697C2116879600D1AEBE /* UIColor+Easynvest.swift */,
+				8BE069842117624A00D1AEBE /* View */,
 				8BE0697F211688B500D1AEBE /* Service */,
 				8BE069752116775600D1AEBE /* Model */,
 				8B248EF92114F5DB003A0F69 /* AppDelegate.swift */,
-				8B248EFB2114F5DB003A0F69 /* ViewController.swift */,
 				8B248EFD2114F5DB003A0F69 /* Main.storyboard */,
 				8B248F002114F5E6003A0F69 /* Assets.xcassets */,
 				8B248F022114F5E6003A0F69 /* LaunchScreen.storyboard */,
@@ -144,6 +157,7 @@
 			children = (
 				8BE069762116785400D1AEBE /* Simulation.swift */,
 				8BE0697A21167BF100D1AEBE /* Investment.swift */,
+				8B240CDA211777E800488BE2 /* FormSimulation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +168,18 @@
 				8BE0698021168B9900D1AEBE /* SimulationService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		8BE069842117624A00D1AEBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B248EFB2114F5DB003A0F69 /* ViewController.swift */,
+				8BE06985211762A100D1AEBE /* SimulationTableViewCell.swift */,
+				8BE06986211762A100D1AEBE /* SimulationTableViewCell.xib */,
+				8BE0698921176CF700D1AEBE /* SubmitTableViewCell.swift */,
+				8BE0698A21176CF700D1AEBE /* SubmitTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +193,7 @@
 				8B248EF22114F5DB003A0F69 /* Sources */,
 				8B248EF32114F5DB003A0F69 /* Frameworks */,
 				8B248EF42114F5DB003A0F69 /* Resources */,
-				8B0DCDAF2116758300B8E32B /* ShellScript */,
+				8B0DCDAF2116758300B8E32B /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -240,9 +266,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BE06988211762A100D1AEBE /* SimulationTableViewCell.xib in Resources */,
 				8B248F042114F5E6003A0F69 /* LaunchScreen.storyboard in Resources */,
 				8B248F012114F5E6003A0F69 /* Assets.xcassets in Resources */,
 				8B248EFF2114F5DB003A0F69 /* Main.storyboard in Resources */,
+				8BE0698C21176CF700D1AEBE /* SubmitTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +320,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8B0DCDAF2116758300B8E32B /* ShellScript */ = {
+		8B0DCDAF2116758300B8E32B /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -301,6 +329,7 @@
 			);
 			inputPaths = (
 			);
+			name = SwiftLint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -316,10 +345,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BE06987211762A100D1AEBE /* SimulationTableViewCell.swift in Sources */,
 				8BE0698121168B9900D1AEBE /* SimulationService.swift in Sources */,
 				8BE0697B21167BF100D1AEBE /* Investment.swift in Sources */,
+				8BE0698321175B3A00D1AEBE /* UILabel+Easynvest.swift in Sources */,
+				8B240CDB211777E800488BE2 /* FormSimulation.swift in Sources */,
 				8B248EFC2114F5DB003A0F69 /* ViewController.swift in Sources */,
 				8BE069772116785400D1AEBE /* Simulation.swift in Sources */,
+				8BE0698B21176CF700D1AEBE /* SubmitTableViewCell.swift in Sources */,
 				8BE0697D2116879600D1AEBE /* UIColor+Easynvest.swift in Sources */,
 				8B248EFA2114F5DB003A0F69 /* AppDelegate.swift in Sources */,
 			);

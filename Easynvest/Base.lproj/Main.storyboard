@@ -18,81 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quanto você gostaria de aplicar?*" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDJ-hA-aIG">
-                                <rect key="frame" x="4" y="96" width="366" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="R$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UAm-CY-yZA">
-                                <rect key="frame" x="4" y="142.5" width="366" height="40"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <textInputTraits key="textInputTraits" textContentType="tel"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual o percentual do CDI do investimento?*" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHI-T8-Gpm">
-                                <rect key="frame" x="4" y="327" width="367" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVx-Xi-up2">
-                                <rect key="frame" x="161.5" y="483.5" width="52" height="30"/>
-                                <state key="normal" title="Simular"/>
-                                <connections>
-                                    <action selector="simulationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5r7-RN-iKR"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="100%" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QK4-FB-QXU">
-                                <rect key="frame" x="4" y="375.5" width="366" height="40"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="dia/mês/ano" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvD-Hb-Jce">
-                                <rect key="frame" x="4" y="259" width="366" height="40"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a data de vencimento do investimento?*" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7p-CA-Zc1">
-                                <rect key="frame" x="4" y="210.5" width="367" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tZn-pH-Kis">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DVx-Xi-up2" secondAttribute="trailing" constant="161.5" id="14B-bf-uFa"/>
-                            <constraint firstItem="UDJ-hA-aIG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="A4W-s4-CVT"/>
-                            <constraint firstItem="QK4-FB-QXU" firstAttribute="trailing" secondItem="UAm-CY-yZA" secondAttribute="trailing" id="B67-5Y-dIQ"/>
-                            <constraint firstItem="DVx-Xi-up2" firstAttribute="top" secondItem="QK4-FB-QXU" secondAttribute="bottom" constant="68" id="Clb-Et-ILF"/>
-                            <constraint firstItem="QHI-T8-Gpm" firstAttribute="top" secondItem="dvD-Hb-Jce" secondAttribute="bottom" constant="28" id="D6N-yR-pkh"/>
-                            <constraint firstItem="QK4-FB-QXU" firstAttribute="leading" secondItem="UAm-CY-yZA" secondAttribute="leading" id="EWg-GT-QeX"/>
-                            <constraint firstItem="N7p-CA-Zc1" firstAttribute="top" secondItem="UAm-CY-yZA" secondAttribute="bottom" constant="28" id="FLP-8z-drv"/>
-                            <constraint firstItem="QK4-FB-QXU" firstAttribute="trailing" secondItem="UDJ-hA-aIG" secondAttribute="trailing" id="PAe-Ud-YpV"/>
-                            <constraint firstItem="QK4-FB-QXU" firstAttribute="top" secondItem="QHI-T8-Gpm" secondAttribute="bottom" constant="28" id="Pod-is-YJ4"/>
-                            <constraint firstItem="QHI-T8-Gpm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="UmT-wn-IHq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QHI-T8-Gpm" secondAttribute="trailing" constant="4" id="ZzL-tu-4tJ"/>
-                            <constraint firstItem="UDJ-hA-aIG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="bDi-zj-N2S"/>
-                            <constraint firstItem="dvD-Hb-Jce" firstAttribute="top" secondItem="N7p-CA-Zc1" secondAttribute="bottom" constant="28" id="clg-Du-PA0"/>
-                            <constraint firstItem="QK4-FB-QXU" firstAttribute="trailing" secondItem="dvD-Hb-Jce" secondAttribute="trailing" id="jxT-hW-94t"/>
-                            <constraint firstItem="UAm-CY-yZA" firstAttribute="top" secondItem="UDJ-hA-aIG" secondAttribute="bottom" constant="26" id="tEV-Ip-ClM"/>
-                            <constraint firstItem="QK4-FB-QXU" firstAttribute="leading" secondItem="dvD-Hb-Jce" secondAttribute="leading" id="u8e-bg-qhv"/>
-                            <constraint firstItem="QK4-FB-QXU" firstAttribute="leading" secondItem="UDJ-hA-aIG" secondAttribute="leading" id="vEF-xb-rsf"/>
-                            <constraint firstItem="N7p-CA-Zc1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="voc-NR-dud"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UDJ-hA-aIG" secondAttribute="trailing" constant="5" id="x0h-5d-VEc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N7p-CA-Zc1" secondAttribute="trailing" constant="4" id="xYq-Dy-qfd"/>
-                            <constraint firstItem="DVx-Xi-up2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161.5" id="zQq-Yu-9d9"/>
+                            <constraint firstItem="tZn-pH-Kis" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3GE-s7-ymj"/>
+                            <constraint firstItem="tZn-pH-Kis" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FHS-xr-xe5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tZn-pH-Kis" secondAttribute="bottom" id="M3o-zY-apL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tZn-pH-Kis" secondAttribute="trailing" id="kdL-Zd-OAw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="cdiPercentQuestionLabel" destination="QHI-T8-Gpm" id="UEe-TP-vnK"/>
-                        <outlet property="simulationButton" destination="DVx-Xi-up2" id="SOV-BE-7G6"/>
-                        <outlet property="timeQuestionLabel" destination="N7p-CA-Zc1" id="NzK-o9-0Z0"/>
-                        <outlet property="valueQuestionLabel" destination="UDJ-hA-aIG" id="7dW-XM-Py2"/>
+                        <outlet property="tableView" destination="tZn-pH-Kis" id="nzg-KN-KQa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
