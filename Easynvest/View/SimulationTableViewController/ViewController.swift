@@ -9,14 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
     var service: SimulationService!
-    var questions: [QuestionForm] = []
+    var simulationViewModel: SimulationViewModel!
     var simulationFields: [String: String] = [:]
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.service = SimulationService(delegate: self)
+        self.simulationViewModel = SimulationViewModel()
         self.configurationTableView()
-        self.questions = Form.getSimulationQuestions()
     }
     override func viewWillLayoutSubviews() {
         //self.updateTableViewContentInset()
@@ -31,20 +31,26 @@ class ViewController: UIViewController {
                                 forCellReuseIdentifier: "submitCell")
         self.tableView.tableFooterView = UIView(frame: .zero)
         self.tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 1))
+        self.simulationViewModel.questions = Form.getSimulationQuestions()
     }
-    func updateTableViewContentInset() {
-        let viewHeight: CGFloat = view.frame.size.height
-        let tableViewContentHeight: CGFloat = tableView.contentSize.height
-        let marginHeight: CGFloat = (viewHeight - tableViewContentHeight) / 3.0
-        let test = max(0, marginHeight)
-        self.tableView.contentInset = UIEdgeInsets(top: test, left: 0, bottom: -test, right: 0)
+//    func updateTableViewContentInset() {
+//        let viewHeight: CGFloat = view.frame.size.height
+//        let tableViewContentHeight: CGFloat = tableView.contentSize.height
+//        let marginHeight: CGFloat = (viewHeight - tableViewContentHeight) / 3.0
+//        let test = max(0, marginHeight)
+//        self.tableView.contentInset = UIEdgeInsets(top: test, left: 0, bottom: -test, right: 0)
+//    }
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.view.endEditing(true)
     }
     func convertDateFormater(_ date: String) -> String {
         let inputFormatter = DateFormatter()
         inputFormatter.dateFormat = "dd/MM/yyyy"
-        let showDate = inputFormatter.date(from: date)
+        if let showDate = inputFormatter.date(from: date) {
         inputFormatter.dateFormat = "yyyy-MM-dd"
-        return  inputFormatter.string(from: showDate!)
+            return  inputFormatter.string(from: showDate)
+        }
+        return ""
     }
 }
 
@@ -59,19 +65,20 @@ extension ViewController: SimulationServiceDelegate {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return questions.count + 1
+        return self.simulationViewModel.questions.count + 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == questions.count {
+        if indexPath.row == self.simulationViewModel.questions.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "submitCell", for: indexPath)
             as? SubmitTableViewCell
             cell?.delegate = self
+            cell?.bind(isReady: self.simulationViewModel.isReadySubmit)
             return cell ?? SubmitTableViewCell()
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "questionCell", for: indexPath)
             as? SimulationTableViewCell
             cell?.delegate = self
-            cell?.bind(question: self.questions[indexPath.row])
+            cell?.bind(question: self.simulationViewModel.questions[indexPath.row])
             return cell ?? SimulationTableViewCell()
         }
     }
@@ -80,18 +87,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 extension ViewController: SimulationTableViewCellDelegate {
     func endEditingText(identifier: String, textValue: String) {
         if identifier == "maturityDate" {
-           self.simulationFields[identifier] = self.convertDateFormater(textValue)
+            self.simulationViewModel.setWith(identifier: identifier, value: self.convertDateFormater(textValue))
         } else {
-        self.simulationFields[identifier] = textValue
+        self.simulationViewModel.setWith(identifier: identifier, value: textValue)
         }
+        let lastIndexPath = IndexPath(row: self.simulationViewModel.questions.count, section: 0)
+        self.tableView.reloadRows(at: [lastIndexPath], with: .none)
     }
 }
 
 extension ViewController: SubmitTableViewCellDelegate {
     func submitButtonPressed() {
         self.view.endEditing(true)
-        self.simulationFields["index"] = "CDI"
-        self.simulationFields["isTaxFree"] = "false"
-        self.service.getSimulationResult(params: self.simulationFields)
+        self.service.getSimulationResult(params: self.simulationViewModel.dic)
     }
 }

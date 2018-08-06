@@ -26,6 +26,14 @@ class SubmitTableViewCell: UITableViewCell {
         self.submitButton.tintColor = .white
         self.submitButton.layer.cornerRadius = self.submitButton.frame.height / 2
     }
+    func bind(isReady: Bool) {
+        if isReady {
+            self.submitButton.backgroundColor = .greenEasynvestColor
+        } else {
+            self.submitButton.backgroundColor = .greyEasynvestColor
+        }
+        self.submitButton.isEnabled = isReady
+    }
     @IBAction func submitButtonPressed(_ sender: Any) {
         delegate?.submitButtonPressed()
     }

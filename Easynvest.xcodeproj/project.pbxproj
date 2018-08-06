@@ -14,6 +14,8 @@
 		8B248F012114F5E6003A0F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B248F002114F5E6003A0F69 /* Assets.xcassets */; };
 		8B248F042114F5E6003A0F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B248F022114F5E6003A0F69 /* LaunchScreen.storyboard */; };
 		8B248F0F2114F5E8003A0F69 /* EasynvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B248F0E2114F5E8003A0F69 /* EasynvestTests.swift */; };
+		8B8695CD2117E7220052D712 /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8695CC2117E7220052D712 /* SimulationViewModel.swift */; };
+		8B8695CF2117F39E0052D712 /* SimulationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8695CE2117F39E0052D712 /* SimulationResultViewController.swift */; };
 		8BE069772116785400D1AEBE /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE069762116785400D1AEBE /* Simulation.swift */; };
 		8BE0697B21167BF100D1AEBE /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0697A21167BF100D1AEBE /* Investment.swift */; };
 		8BE0697D2116879600D1AEBE /* UIColor+Easynvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0697C2116879600D1AEBE /* UIColor+Easynvest.swift */; };
@@ -52,6 +54,8 @@
 		8B248F0A2114F5E8003A0F69 /* EasynvestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasynvestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B248F0E2114F5E8003A0F69 /* EasynvestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestTests.swift; sourceTree = "<group>"; };
 		8B248F102114F5E8003A0F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B8695CC2117E7220052D712 /* SimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
+		8B8695CE2117F39E0052D712 /* SimulationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationResultViewController.swift; sourceTree = "<group>"; };
 		8BE069762116785400D1AEBE /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
 		8BE0697A21167BF100D1AEBE /* Investment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
 		8BE0697C2116879600D1AEBE /* UIColor+Easynvest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Easynvest.swift"; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			children = (
 				8BE0698221175B3A00D1AEBE /* UILabel+Easynvest.swift */,
 				8BE0697C2116879600D1AEBE /* UIColor+Easynvest.swift */,
+				8B8695CB2117E6E80052D712 /* ViewModel */,
 				8BE069842117624A00D1AEBE /* View */,
 				8BE0697F211688B500D1AEBE /* Service */,
 				8BE069752116775600D1AEBE /* Model */,
@@ -158,6 +163,7 @@
 				8B8695CA2117A2E10052D712 /* SubmitTableViewCell */,
 				8B8695C92117A2C00052D712 /* SimulationTableViewCell */,
 				8B248EFB2114F5DB003A0F69 /* ViewController.swift */,
+				8B8695CE2117F39E0052D712 /* SimulationResultViewController.swift */,
 			);
 			path = SimulationTableViewController;
 			sourceTree = "<group>";
@@ -178,6 +184,14 @@
 				8BE0698921176CF700D1AEBE /* SubmitTableViewCell.swift */,
 			);
 			path = SubmitTableViewCell;
+			sourceTree = "<group>";
+		};
+		8B8695CB2117E6E80052D712 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B8695CC2117E7220052D712 /* SimulationViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		8BE069752116775600D1AEBE /* Model */ = {
@@ -371,6 +385,7 @@
 			files = (
 				8BE06987211762A100D1AEBE /* SimulationTableViewCell.swift in Sources */,
 				8BE0698121168B9900D1AEBE /* SimulationService.swift in Sources */,
+				8B8695CF2117F39E0052D712 /* SimulationResultViewController.swift in Sources */,
 				8BE0697B21167BF100D1AEBE /* Investment.swift in Sources */,
 				8BE0698321175B3A00D1AEBE /* UILabel+Easynvest.swift in Sources */,
 				8B240CDB211777E800488BE2 /* FormSimulation.swift in Sources */,
@@ -379,6 +394,7 @@
 				8BE0698B21176CF700D1AEBE /* SubmitTableViewCell.swift in Sources */,
 				8BE0697D2116879600D1AEBE /* UIColor+Easynvest.swift in Sources */,
 				8B248EFA2114F5DB003A0F69 /* AppDelegate.swift in Sources */,
+				8B8695CD2117E7220052D712 /* SimulationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,16 +41,31 @@
             </objects>
             <point key="canvasLocation" x="140" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Simulation Result View Controller-->
         <scene sceneID="a6Y-bY-6WV">
             <objects>
-                <viewController id="JG1-fH-BBf" sceneMemberID="viewController">
+                <viewController id="JG1-fH-BBf" customClass="SimulationResultViewController" customModule="Easynvest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z1F-9D-UNZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRB-vg-ntV">
+                                <rect key="frame" x="164" y="318" width="47" height="31"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uRB-vg-ntV" firstAttribute="top" secondItem="kZ5-wm-OSP" secondAttribute="top" constant="298" id="5aD-UD-E2J"/>
+                            <constraint firstItem="uRB-vg-ntV" firstAttribute="centerY" secondItem="z1F-9D-UNZ" secondAttribute="centerY" id="MOH-xE-VkH"/>
+                            <constraint firstItem="uRB-vg-ntV" firstAttribute="centerX" secondItem="z1F-9D-UNZ" secondAttribute="centerX" id="flE-EN-aTK"/>
+                            <constraint firstItem="uRB-vg-ntV" firstAttribute="leading" secondItem="kZ5-wm-OSP" secondAttribute="leading" constant="164" id="gwN-OT-1qT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kZ5-wm-OSP"/>
                     </view>
+                    <connections>
+                        <outlet property="newSimulationButton" destination="uRB-vg-ntV" id="K0X-oG-ea2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6FP-fJ-H0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
