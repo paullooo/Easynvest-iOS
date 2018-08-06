@@ -38,11 +38,11 @@ class SimulationService {
             do {
                 let decoder = JSONDecoder()
                 let simulationData = try decoder.decode(Simulation.self, from: data)
-                print(simulationData.grossAmount)
-                print(simulationData.investmentParameter)
+                print(simulationData)
+                self.delegate?.simulationSuccess()
             } catch let err {
-                //print(error!)
                 print("Err", err)
+                self.delegate?.simulationFailure(error: err.localizedDescription)
             }
             print(response!)
         }

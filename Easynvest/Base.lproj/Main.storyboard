@@ -34,11 +34,27 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="tZn-pH-Kis" id="nzg-KN-KQa"/>
+                        <segue destination="JG1-fH-BBf" kind="show" identifier="detailSegue" id="IuH-iS-d0b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a6Y-bY-6WV">
+            <objects>
+                <viewController id="JG1-fH-BBf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z1F-9D-UNZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kZ5-wm-OSP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6FP-fJ-H0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="133"/>
         </scene>
     </scenes>
 </document>
