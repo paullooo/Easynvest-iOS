@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SimulationServiceDelegate: class {
-    func simulationSuccess()
+    func simulationSuccess(simulation: Simulation)
     func simulationFailure(error: String)
 }
 
@@ -39,7 +39,7 @@ class SimulationService {
                 let decoder = JSONDecoder()
                 let simulationData = try decoder.decode(Simulation.self, from: data)
                 print(simulationData)
-                self.delegate?.simulationSuccess()
+                self.delegate?.simulationSuccess(simulation: simulationData)
             } catch let err {
                 print("Err", err)
                 self.delegate?.simulationFailure(error: err.localizedDescription)

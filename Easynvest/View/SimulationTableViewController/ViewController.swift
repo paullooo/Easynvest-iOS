@@ -21,6 +21,15 @@ class ViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         //self.updateTableViewContentInset()
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue" {
+            if let controller = segue.destination as? SimulationResultViewController {
+                if let simulation = sender as? Simulation {
+                    controller.viewModel.simulation = simulation
+                }
+            }
+        }
+    }
     func configurationTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -55,11 +64,10 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: SimulationServiceDelegate {
-    func simulationSuccess() {
-        performSegue(withIdentifier: "detailSegue", sender: nil)
+    func simulationSuccess(simulation: Simulation) {
+        performSegue(withIdentifier: "detailSegue", sender: simulation)
     }
     func simulationFailure(error: String) {
-        print("tchau")
     }
 }
 

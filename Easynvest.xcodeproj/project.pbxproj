@@ -16,6 +16,11 @@
 		8B248F0F2114F5E8003A0F69 /* EasynvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B248F0E2114F5E8003A0F69 /* EasynvestTests.swift */; };
 		8B8695CD2117E7220052D712 /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8695CC2117E7220052D712 /* SimulationViewModel.swift */; };
 		8B8695CF2117F39E0052D712 /* SimulationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8695CE2117F39E0052D712 /* SimulationResultViewController.swift */; };
+		8BD7AD3021186F1700FE2F58 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7AD2F21186F1700FE2F58 /* ResultViewModel.swift */; };
+		8BD7AD362118708100FE2F58 /* ResumeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7AD322118708000FE2F58 /* ResumeTableViewCell.swift */; };
+		8BD7AD372118708100FE2F58 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD7AD332118708000FE2F58 /* DetailTableViewCell.xib */; };
+		8BD7AD382118708100FE2F58 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7AD342118708100FE2F58 /* DetailTableViewCell.swift */; };
+		8BD7AD392118708100FE2F58 /* ResumeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD7AD352118708100FE2F58 /* ResumeTableViewCell.xib */; };
 		8BE069772116785400D1AEBE /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE069762116785400D1AEBE /* Simulation.swift */; };
 		8BE0697B21167BF100D1AEBE /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0697A21167BF100D1AEBE /* Investment.swift */; };
 		8BE0697D2116879600D1AEBE /* UIColor+Easynvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0697C2116879600D1AEBE /* UIColor+Easynvest.swift */; };
@@ -56,6 +61,11 @@
 		8B248F102114F5E8003A0F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B8695CC2117E7220052D712 /* SimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
 		8B8695CE2117F39E0052D712 /* SimulationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationResultViewController.swift; sourceTree = "<group>"; };
+		8BD7AD2F21186F1700FE2F58 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		8BD7AD322118708000FE2F58 /* ResumeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeTableViewCell.swift; sourceTree = "<group>"; };
+		8BD7AD332118708000FE2F58 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		8BD7AD342118708100FE2F58 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		8BD7AD352118708100FE2F58 /* ResumeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResumeTableViewCell.xib; sourceTree = "<group>"; };
 		8BE069762116785400D1AEBE /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
 		8BE0697A21167BF100D1AEBE /* Investment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
 		8BE0697C2116879600D1AEBE /* UIColor+Easynvest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Easynvest.swift"; sourceTree = "<group>"; };
@@ -160,6 +170,7 @@
 		8B8695C82117A2980052D712 /* SimulationTableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8BD7AD312118706000FE2F58 /* Cell */,
 				8B8695CA2117A2E10052D712 /* SubmitTableViewCell */,
 				8B8695C92117A2C00052D712 /* SimulationTableViewCell */,
 				8B248EFB2114F5DB003A0F69 /* ViewController.swift */,
@@ -190,8 +201,20 @@
 			isa = PBXGroup;
 			children = (
 				8B8695CC2117E7220052D712 /* SimulationViewModel.swift */,
+				8BD7AD2F21186F1700FE2F58 /* ResultViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8BD7AD312118706000FE2F58 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8BD7AD342118708100FE2F58 /* DetailTableViewCell.swift */,
+				8BD7AD332118708000FE2F58 /* DetailTableViewCell.xib */,
+				8BD7AD322118708000FE2F58 /* ResumeTableViewCell.swift */,
+				8BD7AD352118708100FE2F58 /* ResumeTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		8BE069752116775600D1AEBE /* Model */ = {
@@ -307,7 +330,9 @@
 				8BE06988211762A100D1AEBE /* SimulationTableViewCell.xib in Resources */,
 				8B248F042114F5E6003A0F69 /* LaunchScreen.storyboard in Resources */,
 				8B248F012114F5E6003A0F69 /* Assets.xcassets in Resources */,
+				8BD7AD392118708100FE2F58 /* ResumeTableViewCell.xib in Resources */,
 				8B248EFF2114F5DB003A0F69 /* Main.storyboard in Resources */,
+				8BD7AD372118708100FE2F58 /* DetailTableViewCell.xib in Resources */,
 				8BE0698C21176CF700D1AEBE /* SubmitTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +410,8 @@
 			files = (
 				8BE06987211762A100D1AEBE /* SimulationTableViewCell.swift in Sources */,
 				8BE0698121168B9900D1AEBE /* SimulationService.swift in Sources */,
+				8BD7AD362118708100FE2F58 /* ResumeTableViewCell.swift in Sources */,
+				8BD7AD382118708100FE2F58 /* DetailTableViewCell.swift in Sources */,
 				8B8695CF2117F39E0052D712 /* SimulationResultViewController.swift in Sources */,
 				8BE0697B21167BF100D1AEBE /* Investment.swift in Sources */,
 				8BE0698321175B3A00D1AEBE /* UILabel+Easynvest.swift in Sources */,
@@ -395,6 +422,7 @@
 				8BE0697D2116879600D1AEBE /* UIColor+Easynvest.swift in Sources */,
 				8B248EFA2114F5DB003A0F69 /* AppDelegate.swift in Sources */,
 				8B8695CD2117E7220052D712 /* SimulationViewModel.swift in Sources */,
+				8BD7AD3021186F1700FE2F58 /* ResultViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
